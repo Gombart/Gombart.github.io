@@ -1,0 +1,137 @@
+html {
+
+  font-family: 'Gelasio', serif;
+
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body {
+	width: cover;
+	height: cover;
+	margin:0 auto;
+	padding: 0;
+	}
+    header{
+
+    }
+    main{
+        size: cover;
+        padding: 50px;
+    }
+/*navigation Bar */
+ul.navi {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+
+}
+
+li.navi {
+  float: left;
+
+}
+
+li.navi a {
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 45;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li.navi a:hover {
+  background-color: #111;
+}
+
+li.navi {
+  border-right: 1px solid #bbb;
+}
+
+li.navi:last-child {
+  border-right: none;
+}
+.active {
+  background-color: #bf2222;
+}
+ul.navi {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+li.name {
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 45;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* Navigation Bar ende*/
+
+h1, h2, p{
+    text-align: center;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #bf2222;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #570f0f;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 0;
+  background-color: none;
+  padding: 20px;
+}
+
+/* Footer*/
+footer{
+     width: 100%;
+     overflow: hidden;
+     padding:0;
+     background-color: #333;
+     text-align:center;
+     color: white;
+     position: fixed;
+     bottom: 0;
+     }
+          a.Email,a.Email:visited,a.Email:active{
+         color:white;
+         }
+     a.Email:hover{
+     color: #bf2222;
+     }
+     p.contact{
+        display: box;
+        background-color: #bf2222;
+     }
+
+
+     /*Footer ende*/
