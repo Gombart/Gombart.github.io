@@ -1,22 +1,18 @@
-	<?php
-  $vorname = $_POST['firstname'];
-  $nachname = $_POST['lastname'];
-  $visitor_email = $_POST['Ename'];
-  $message = $_POST['subject'];
-?>
 <?php
-    $email_from = 'bezirksfachwart@trampolin-oberfranken.de';
-    $email_subject = "New Form submission";
-    $email_body = "You have received a new message from the user $nachname.\n".
-                            "Here is the message:\n $message".
-?>
-<?php
-  $to = "bezirksfachwart@trampolin-oberfranken.de";
-  $headers = "From: $email_from \r\n";
- $headers .= "Reply-To: $visitor_email \r\n";
- mail($to,$email_subject,$email_body,$headers);
-?>
-<?php
+  header('Location: /');
+$firstname = $_POST['firstname'];
+$lastname = $_POST['lastname'];
+$visitor_email = $_POST['Ename'];
+$message = $_POST['subject'];
+
+$email_from = 'bezirksfachwart@trampolin-oberfranken.de';
+$email_subject = "Neue Web-Nachricht";
+$email_body = "You have received a new message from the user $firstname\n $lastname\n $visitor_email\n." . "Here is the message: \n $message".;
+
+$to = "bezirksfachwart@trampolin-oberfranken.de";
+$headers = "From: $email_from \r\n";
+$headers = "Reply-To: $visitor_email \r\n";
+mail($to,$email_subject,$email_body,$headers);
 function IsInjected($str)
 {
     $injections = array('(\n+)',
